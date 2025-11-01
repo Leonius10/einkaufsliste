@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #3e9141;
+}
+
+button[value="entfernen"] {
+    background: #e64b4b;
+}
+
+button[value="entfernen"]:hover {
+    background: #c0392b;
+}
+
+button[value="anzeigen"],
+button[value="ausgeben"] {
+    background: #3498db;
+}
+
+button[value="anzeigen"]:hover,
+button[value="ausgeben"]:hover {
+    background: #2d7fc3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eef4ff;
+    padding: 8px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    border-left: 4px solid #4a90e2;
+}

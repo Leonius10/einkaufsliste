@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Einkaufsliste Web</title>
+</head>
+<body>
+
+<h1>Einkaufsliste</h1>
+
+<form method="post">
+    Artikel:
+    <input type="text" name="artikel" placeholder="Artikel..." required>
+
+    <button name="aktion" value="hinzufügen">Hinzufügen</button>
+    <button name="aktion" value="entfernen">Entfernen</button>
+    <button name="aktion" value="anzeigen">Anzeigen</button>
+    <button name="aktion" value="ausgeben">Programm beenden / Ausgeben</button>
+</form>
+
+<h2>Aktuelle Liste:</h2>
+<ul>
+    {% for artikel in einkaufsliste %}
+        <li>{{ artikel }}</li>
+    {% endfor %}
+</ul>
+
+<p>{{ nachricht }}</p>
+
+</body>
+</html>
